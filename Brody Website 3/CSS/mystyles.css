@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+    margin: 0;   
+}
+
+header {
+    background-color: black;
+    overflow: hidden;
+}
+
+
+#hamburger_checkbox {
+    display: none;
+}
+
+
+#hamburger_image {
+    background-color: white;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 10%;
+}
+
+  
+  input[id="hamburger_checkbox"]:not(:checked) + nav {
+    display: none;
+  }
+  
+  
+  h1 {
+    color: white;
+    float: left;
+    padding: 0 20px;        
+    width: 100%;
+  }
+  
+
+nav a {
+    color: white;
+    float: left;
+    background-color:orange;
+    padding: 30px 20px;     
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    background-color:rgb(250, 178, 45);
+    color: black;
+}
+
+
+.active_item {
+    background-color:white;
+    color:black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 32px;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    
+    #hamburger_image {
+        display: none;
+    }
+
+    
+      input[id="hamburger_checkbox"]:not(:checked) + nav {
+          display:block
+      }
+
+    
+    h1 {
+        text-align:left;
+        width: 390px;
+    }
+
+    
+        nav {
+          float: right;
+        }
+  
+    
+        nav a {
+          width: auto;
+        }
+}
